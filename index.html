@@ -2,23 +2,82 @@
 <html>
 <head>
   <title>Arx Games</title>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="purple">
   <link rel="icon" type="image/x-icon" href="assets/img/icon.svg">
+  <script charset="UTF-8" src="scripts.js" async></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @font-face {
+    font-family: Archicoco;
+    font-weight: 100;
+    src: url("assets/font/Archicoco.otf") format("opentype");
+    }
     html{
       background-color: #372349;
       font-family: sans-serif;
+      text-align: center;
+      color: antiquewhite;
+      margin-left: 5em;
+      margin-right: 5em;
     }
     h1{
+      font-family: Archicoco;
       color: #dd28ab;
+      font-size: 4em;
+   }
+   h1,h3{
+      margin: 0px;
     }
-    h2{
-      color: #c928ce;
+    h3{
+    cursor: pointer;
+    border-radius: 3px;
+    }
+    img{
+    width: 14em;
+    border-radius: 5px;
+    }
+    fieldset{
+    background-color: darkslateblue;
+    border: none;
+    display: block ruby;
+    border-radius: 10px;
+    height: 25em;
+    box-shadow: #312a59 8px 8px 5px;
+    }
+    a{
+    color: aquamarine;
+    }
+    .active{
+        background-color: #9459bd;
     }
   </style>
 </head>
 <body>
   <img src="assets/img/icon.svg"></img>
-  <h1>Arx</h1>
-  <h2>Games</h2>
+  <h1>ARX GAMES</h1>
+  <fieldset style="margin-bottom: 1em; height:auto;">
+  <h3 id="gamesbuton" class="active">Games</h3>
+  <h3 style="margin-right: 12em;margin-left: 12em;" id="marketbuton">Market</h3>
+  <h3 id="aboutbuton">About</h3>
+  </fieldset>
+  <fieldset id="games" style="display: block ruby">
+  <div>
+  <img src="assets/img/test.png"></img>
+  <h2>???</h2>
+  </div>
+  </fieldset>
+  <fieldset id="market" style="display: none">
+  <h3>Coming Soon</h3>
+  </fieldset>
+  <fieldset id="about" style="display: none;">
+  <h3>ARX Game studios a game & software developer</h3>
+  <br>
+  <h3>= Developers =</h3>
+  <h3><a href="https://eneshamza.github.io">EnesHamza</a></h3>
+  <br>
+  <h3>= support =</h3>
+  <a href="mailto:eneshamza0@proton.me">eneshamza0@proton.me</a>
+  </fieldset>
 </body>
 </html>
